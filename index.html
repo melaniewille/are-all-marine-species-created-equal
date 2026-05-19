@@ -1,0 +1,585 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="description" content="Why Domain Matters: A Preliminary Study of Domain Effects in Underwater Object Detection">
+  <meta name="keywords"
+    content="Underwater Object Detection, Domain Shift, Domain Generalization, Data Annotation, Marine Robotics">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Are All Marine Species Created Equal?</title>
+
+  <link href="https://fonts.googleapis.com/css?family=Google+Sans|Noto+Sans|Castoro" rel="stylesheet">
+  <link rel="stylesheet" href="./static/css/dics.original.css">
+  <link rel="stylesheet" href="./static/css/bulma.min.css">
+  <link rel="stylesheet" href="./static/css/bulma-carousel.min.css">
+  <link rel="stylesheet" href="./static/css/bulma-slider.min.css">
+  <link rel="stylesheet" href="./static/css/fontawesome.all.min.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/jpswalsh/academicons@1/css/academicons.min.css">
+  <link rel="stylesheet" href="./static/css/index.css">
+  <link rel="icon" href="./static/images/oscd_favicon.png">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script defer src="./static/js/fontawesome.all.min.js"></script>
+  <script src="./static/js/bulma-carousel.min.js"></script>
+  <script src="./static/js/bulma-slider.min.js"></script>
+  <script src="./static/js/index.js"></script>
+  <script src="./static/js/dics.original.js"></script>
+</head>
+
+<body>
+
+  <nav class="navbar" role="navigation" aria-label="main navigation">
+    <div class="navbar-brand">
+      <a role="button" class="navbar-burger" aria-label="menu" aria-expanded="false">
+        <span aria-hidden="true"></span>
+        <span aria-hidden="true"></span>
+        <span aria-hidden="true"></span>
+      </a>
+    </div>
+    <div class="navbar-menu">
+      <div class="navbar-start" style="flex-grow: 1; justify-content: center;">
+
+        <div class="navbar-item has-dropdown is-hoverable">
+          <a class="navbar-link">
+            More Research
+          </a>
+          <div class="navbar-dropdown">
+            <a class="navbar-item" href="https://melaniewille.github.io/are-all-marine-species-created-equal/">
+              Are All Marine Species Created Equal?
+            </a>
+            <a class="navbar-item" href="https://melaniewille.github.io/why-domain-matters/">
+              Why Domain Matters
+            </a>
+          </div> 
+        </div>
+      </div>
+
+    </div>
+  </nav>
+
+  <!-- Hero Section -->
+  <section class="hero">
+    <div class="hero-body">
+      <div class="container is-max-desktop">
+        <div class="columns is-centered">
+          <div class="column has-text-centered">
+            <h1 class="title is-1 publication-title">
+              <div class="gradient-text" style="font-size: 1em;">
+                Are All Marine Species Created Equal?
+              </div> 
+              <div>
+                Performance Disparities in Underwater Object Detection
+              </div>
+            </h1>
+            <div class="is-size-5 publication-authors">
+              <span class="author-block">
+                <a href="https://research.qut.edu.au/qcr/people/melanie-wille/">Melanie Wille</a>,
+              </span>
+              <span class="author-block">
+                <a href="https://www.tobiasfischer.info/index.html">Tobias Fischer</a>,
+              </span>
+              <span class="author-block">
+                <a href="https://www.qut.edu.au/about/our-people/academic-profiles/sg.raine">Scarlett Raine </a>
+              </span>
+            </div>
+
+            <div class="is-size-5 publication-authors">
+              <span class="author-block">QUT Centre for Robotics &nbsp; </span>
+            </div>
+
+            <!-- Uncomment and update when paper is accepted -->
+            <div class="column has-text-centered">
+                <span class="link-block">
+                  <a href="https://openaccess.thecvf.com/WACV2026"
+                    class="external-link button is-normal is-rounded gradient-button">
+                    <span>IEEE/CVF WACV 2026</span>
+                  </a>
+                </span>
+            </div>
+
+
+
+            <div class="column has-text-centered">
+              <div class="publication-links">
+                <!-- PDF Link. -->
+                <span class="link-block">
+                  <a href="https://melaniewille.github.io/are-all-marine-species-created-equal/static/images/Wille_Are_All_Marine_Species_Created_Equal_Performance_Disparities_in_Underwater_WACV_2026_paper.pdf"
+                      target="_blank"
+                      class="external-link button is-normal is-rounded is-dark">
+                    <span class="icon">
+                      <i class="fas fa-file-pdf"></i>
+                    </span>
+                    <span>Paper</span>
+                  </a>
+                </span>
+                <span class="link-block">
+                  <a href="https://arxiv.org/abs/2508.18729" class="external-link button is-normal is-rounded is-dark">
+                    <span class="icon">
+                      <i class="ai ai-arxiv"></i>
+                    </span>
+                    <span>arXiv</span>
+                  </a>
+                </span>
+                <!-- Code Link. -->
+                <span class="link-block">
+                  <a href="https://github.com/melaniewille/uod-class-disparities"
+                    class="external-link button is-normal is-rounded is-dark">
+                    <span class="icon">
+                      <i class="fab fa-github"></i>
+                    </span>
+                    <span>Code</span>
+                  </a>
+                </span>
+                <!-- Poster Link. -->
+                <span class="link-block">
+                  <a href="https://melaniewille.github.io/are-all-marine-species-created-equal/static/images/AreAllMarineSpeciesCreatedEqual_Poster_WACV.pdf"
+                      target="_blank"
+                      class="external-link button is-normal is-rounded is-dark">
+                    <span class="icon">
+                      <i class="fas fa-image"></i>
+                    </span>
+                    <span>Poster</span>
+                  </a>
+                </span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Carousel Section -->
+  <section class="section pb-0"> 
+    <div class="container is-centered has-text-centered">
+      <div class="columns is-centered">
+        <div class="column is-10">
+          <div style="display: inline-block; max-width: 80%; width: 80%;">
+            <!-- Carousel -->
+            <div id="video-carousel" style="position: relative; margin: 0 40px;">
+              <div class="swiper-container"
+                style="border-radius: 15px; overflow: visible; box-shadow: 0 10px 30px rgba(0,0,0,0.15); padding: 0;">
+                <div class="swiper-wrapper">
+                  <!-- Slide 1 -->
+                  <div class="swiper-slide">
+                    <div style="background: white; padding: 1.5rem;">
+                      <h3 class="title is-5" style="margin-bottom: 0.3rem;">Originally Imbalanced Class Distribution</h3>
+                      <h3 class="content is-5" style="margin-bottom: 1rem;">with significant performance gaps</h3>
+
+                      <figure class="image is-covered">
+                        <img
+                          src="./static/images/imbalanced_intro.png"
+                          alt="Imbalanced Instances and mAP"
+                          style="
+                            width: 100%;
+                            height: auto;
+                            display: block;
+                            max-height: 600px;
+                            object-fit: contain;
+                            border-radius: 10px;
+                          "
+                        >
+                      </figure>
+                    </div>
+                  </div>
+
+                  <!-- Slide 2 -->
+                  <div class="swiper-slide">
+                    <div style="background: white; padding: 1.5rem;">
+                      <h3 class="title is-5" style="margin-bottom: 0.3rem;">Four Target Classes</h3>
+                      <h3 class="content is-5" style="margin-bottom: 1rem;">in the public DUO dataset</h3>
+
+                      <figure class="image is-covered">
+                        <img
+                          src="./static/images/targets.png"
+                          alt="DUO Classes"
+                          style="
+                            width: 100%;
+                            height: auto;
+                            display: block;
+                            max-height: 600px;
+                            object-fit: contain;
+                            border-radius: 10px;
+                          "
+                        >
+                      </figure>
+                    </div>
+                  </div>
+
+                  <!-- Slide 3 -->
+                  <div class="swiper-slide">
+                    <div style="background: white; padding: 1.5rem;">
+                      <h3 class="title is-5" style="margin-bottom: 0.3rem;">Artificially Balanced Class Distribution</h3>
+                      <h3 class="content is-5" style="margin-bottom: 1rem;">with persistent performance disparities</h3>
+
+                      <figure class="image is-covered">
+                        <img
+                          src="./static/images/balanced_intro.png"
+                          alt="Balanced Instances and mAP"
+                          style="
+                            width: 100%;
+                            height: auto;
+                            display: block;
+                            max-height: 600px;
+                            object-fit: contain;
+                            border-radius: 10px;
+                          "
+                        >
+                      </figure>
+                    </div>
+                  </div>
+                  </div>
+
+                  <!-- Navigation arrows -->
+                  <div class="swiper-button-prev video-prev" style="color: #667eea; left: -10px;"></div>
+                  <div class="swiper-button-next video-next" style="color: #667eea; right: -10px;"></div>
+
+                  <!-- Pagination dots -->
+                  <div class="swiper-pagination video-pagination"   style="bottom: -1px;"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+  <!-- Abstract Section -->
+  <section class="section">
+    <div class="container is-centered has-text-centered">
+      <div class="columns is-four-fifths is-centered">
+        <div class="column is-10">
+          <h2 class="title is-3">Abstract</h2>
+          <div class="content has-text-centered ">
+            <p>
+              Underwater object detection is critical for monitoring marine ecosystems 
+              but poses unique challenges, including degraded image quality, imbalanced 
+              class distribution, and distinct visual characteristics. Not every species 
+              is detected equally well, yet underlying causes remain unclear. We address 
+              two key research questions: 1) What factors beyond data quantity drive 
+              class-specific performance disparities? 2) How can we systematically 
+              improve detection of under-performing marine species? We manipulate 
+              the DUO and RUOD datasets to separate the object detection task into 
+              localization and classification and investigate the under-performance of 
+              the scallop class. Localization analysis using YOLO11 and TIDE finds that 
+              foreground-background discrimination is the most problematic stage 
+              regardless of data quantity. Classification experiments reveal persistent 
+              precision gaps even with balanced data, indicating intrinsic feature-based 
+              challenges beyond data scarcity and inter-class dependencies. We recommend 
+              imbalanced distributions when prioritizing precision, and balanced 
+              distributions when prioritizing recall. Improving under-performing classes 
+              should focus on algorithmic advances, especially within localization modules. 
+              We publicly release our code and datasets.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+  <!-- Background/Motivation -->
+  <section class="section" style="background-color: #f8f9fa; padding: 3rem 0;">
+    <div class="container is-centered has-text-centered">
+      <div class="columns is-centered">
+        <div class="column is-10">
+          <div style="background: white; padding: 2rem; border-radius: 15px; box-shadow: 0 10px 30px rgba(0,0,0,0.1);">
+            <img src="./static/images/motivation.png"
+            style="max-width: 100%; height: 30vh; display: block; margin: 0 auto;">
+            <p
+              style="margin-top: 1.5rem; font-size: 1rem; line-height: 1.6; color: #333; text-align: center; max-width: 900px; margin-left: auto; margin-right: auto;">
+              Even though healthy oceans are essential to life on Earth, marine ecosystems continue to face significant human-induced threats. Underwater object detection has become an important tool for improving environmental monitoring and supporting sustainable ocean resource management. However, accurately detecting objects in underwater imagery remains highly challenging. Poor image quality, low contrast, and visual degradation often make marine species difficult to identify. In addition, organisms frequently appear in dense clusters, occlude one another, or blend into the surrounding environment due to their small size and camouflage. These factors make it difficult to distinguish clear object boundaries and reliably detect marine life. Existing research also suggests that some species are consistently more difficult to detect than others, highlighting important performance disparities in current underwater detection systems.  
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+  <!-- Gap -->
+  <section class="section">
+    <div class="container is-centered has-text-centered">
+      <div class="columns is-four-fifths is-centered">
+        <div class="column is-10">
+          <h2 class="title is-3">Research Gap</h2>
+          <div class="content has-text-centered">
+            <div style="display: inline-block; max-width: 100%;">
+              <img src="./static/images/gap.png" alt="Gap"
+                style="width: 100%; height: auto; border-radius: 10px; display: block;">
+              <p style="margin-top: 1.5rem; font-size: 1rem; line-height: 1.7; color: #333; text-align: center;">
+                Previous studies using the Detecting Underwater Objects (DUO) dataset have consistently reported lower detection performance for the scallop class compared to other marine species. 
+                While most works do not even acknowledge this gap, the few that did suggest that it is primarily caused by the limited number of scallop training instances. 
+                At first glance, this explanation appears reasonable given the strong class imbalance in DUO, where echinus dominate the dataset while scallops represent only a small minority. 
+                However, visual inspection of the images suggests that scallops may also be inherently more difficult to detect due to their appearance and tendency to blend into the environment. 
+                To the best of our knowledge, no one has conducted a systematic analysis yet, to investigate where persistent performance gaps come from – whether it is because of data quantity and class distribution or because of inherent visual characteristics of the targets - which is crucial knowledge for mitigation.
+              </p>
+              <p style="margin-top: 1.5rem; font-size: 1rem; line-height: 1.7; color: #333; text-align: center;">
+                  We therefore ask:
+              </p>
+              <p style="margin-top: 1.5rem; font-size: 1rem; line-height: 1.7; color: #333; text-align: center;">
+                What factors beyond data quantity drive class-specific performance disparities?
+                And how can we systematically improve detection of underperforming marine species?
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+  <!-- Method Section -->
+  <section class="section" style="background-color: #f8f9fa; padding: 3rem 0;">
+    <div class="container is-centered has-text-centered">
+      <div class="columns is-centered">
+        <div class="column is-10">
+          <h2 class="title is-3">Our Approach: <span class = "gradient-text-small">Systematic Decomposition and Class-Aware Analysis of the Detection Process</span> </h2>
+
+          <!-- Carousel and Caption Container -->
+          <div style="display: inline-block; max-width: 100%; width: 100%;">
+            <!-- Carousel -->
+            <div id="results-carousel" style="position: relative;">
+              <div class="swiper-container"
+                style="border-radius: 15px; overflow: hidden; box-shadow: 0 10px 30px rgba(0,0,0,0.15);">
+                <div class="swiper-wrapper">
+                  <!-- Slide 1 -->
+                  <div class="swiper-slide">
+                    <div style="background: white; padding: 1.5rem;">
+                      <h3 class="title is-5" style="margin-bottom: 1rem;">Localization Study</h3>
+                      <img src="./static/images/localization-study.png" alt=""
+                        style="width: 100%; height: 20vh; object-fit: contain; display: block;">
+                    </div>
+                  </div>
+
+                  <!-- Slide 2 -->
+                  <div class="swiper-slide">
+                    <div style="background: white; padding: 1.5rem;">
+                      <h3 class="title is-5" style="margin-bottom: 1rem;">Classification Study</h3>
+                      <img src="./static/images/classification-study.png" alt=""
+                        style="width: 100%; height: 20vh; object-fit: contain; display: block;">
+                    </div>
+                  </div>
+                </div>
+
+                <!-- Navigation arrows -->
+                <div class="swiper-button-prev" style="color: #667eea;"></div>
+                <div class="swiper-button-next" style="color: #667eea;"></div>
+
+                <!-- Pagination dots -->
+                <div class="swiper-pagination"></div>
+              </div>
+            </div>
+
+            <p style="margin-top: 1.5rem; font-size: 1rem; color: #555; text-align: center; line-height: 1.7;">
+              To better understand the causes of class-specific performance disparities, we decompose underwater object detection into two core stages: localization and classification. For the localization analysis, we use YOLO11 as a class-agnostic detector trained on single-class versions of the DUO dataset, allowing us to isolate how effectively different marine species can be separated from the background and localized with bounding boxes. For the classification analysis, we use ResNet-18 on single-object image crops extracted from the dataset, enabling us to evaluate species recognition independently from localization errors. 
+              Our evaluation primarily relies on standard object detection metrics such as mAP, precision, recall, and F1-score. In addition, we incorporate the TIDE Toolkit to perform detailed failure analysis during localization. TIDE categorizes detection mistakes into six distinct error types
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Swiper CSS -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css">
+  <!-- Swiper JS -->
+  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+  <script>
+    document.addEventListener("DOMContentLoaded", function () {
+      const resultsSwiper = new Swiper('#results-carousel .swiper-container', {
+        loop: true,
+        autoplay: {
+          delay: 4000,
+          disableOnInteraction: false,
+        },
+        navigation: {
+          nextEl: '.swiper-button-next',
+          prevEl: '.swiper-button-prev',
+        },
+        pagination: {
+          el: '.swiper-pagination',
+          clickable: true,
+        },
+      });
+
+      const videoSwiper = new Swiper('#video-carousel .swiper-container', {
+        initialSlide: 1,
+        loop: false,
+        navigation: {
+          nextEl: '.video-next',
+          prevEl: '.video-prev',
+        },
+        pagination: {
+          el: '.video-pagination',
+          clickable: true,
+        },
+        on: {
+          init: function () {
+            playCurrentVideo(this);
+          },
+          slideChangeTransitionEnd: function () {
+            playCurrentVideo(this);
+          },
+          slideChangeTransitionStart: function () {
+            pauseAllVideos(this);
+          }
+        }
+      });
+
+      function playCurrentVideo(swiper) {
+        const activeSlide = swiper.slides[swiper.activeIndex];
+        const video = activeSlide.querySelector('video');
+        if (video) {
+          video.currentTime = 0;
+          video.loop = false;
+          video.play().catch(function (e) { console.log("Play prevented:", e); });
+          video.onended = function () {
+            swiper.slideTo(1);
+          };
+        }
+      }
+
+      function pauseAllVideos(swiper) {
+        const videos = swiper.el.querySelectorAll('video');
+        for (let i = 0; i < videos.length; i++) {
+          videos[i].pause();
+        }
+      }
+    });
+  </script>
+
+
+
+  <!-- Results Section -->
+  <section class="section">
+    <div class="container is-centered has-text-centered">
+      <div class="columns is-centered">
+        <div class="column is-11">
+          <h2 class="title is-3">Results</h2>
+
+          <p
+            style="margin-bottom: 2rem; font-size: 1rem; color: #555; line-height: 1.6; max-width: 1000px; margin-left: auto; margin-right: auto;">
+            The localization experiments reveal large performance gaps between marine species, particularly during foreground-background separation. Although these disparities are partly influenced by class imbalance, they persist even in balanced datasets, showing that intrinsic visual characteristics also play a major role. While performance generally decreases with less training data, some species such as starfish remain relatively robust, whereas scallops are far more sensitive to data reduction and difficult for the model to distinguish from the background.
+
+Error analysis further shows that the most common failure is completely missing objects rather than inaccurate bounding boxes, indicating that detection difficulty — not localization precision — is the primary challenge. Classification performance is overall much stronger, but scallops still exhibit a clear precision–recall tradeoff: balanced training improves recall but lowers precision. This suggests that imbalanced setups may be preferable for commercial applications, while balanced training is better suited for conservation tasks where missing detections is more critical. Finally, scallop performance is strongly affected by reductions in other classes, indicating that the model relies on negative examples to learn clearer class boundaries for visually ambiguous species.
+          </p>
+
+          <!-- Images Side by Side -->
+          <div style="display: flex; gap: 2rem; justify-content: center; flex-wrap: wrap;">
+
+            <!-- Axis 1 Table -->
+            <div style="flex: 1; min-width: 450px; max-width: 550px;">
+              <h3 class="title is-5" style="margin-bottom: 1rem; color: #000000;">
+                <span style="background: #e1e1e1; padding: 4px 12px; border-radius: 5px;">Localization</span>
+              </h3>
+              <div style="overflow-x: auto;">
+                <img src="./static/images/loc-results.png"
+            style="max-width: 100%; height: 50vh; display: block; margin: 0 auto;">
+              </div>
+            </div>
+
+            <!-- Axis 2 Table -->
+            <div style="flex: 1; min-width: 450px; max-width: 550px;">
+              <h3 class="title is-5" style="margin-bottom: 1rem; color: #000000;">
+                <span style="background: #e1e1e1; padding: 4px 12px; border-radius: 5px;">Classification</span>
+              </h3>
+              <div style="overflow-x: auto;">
+                <img src="./static/images/cls-results.png"
+            style="max-width: 100%; height: 50vh; display: block; margin: 0 auto;">
+              </div>
+            </div>
+
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contributions Section -->
+  <section class="section" style="background-color: #f8f9fa; padding: 3rem 0;">
+    <div class="container is-centered has-text-centered">
+      <div class="columns is-centered">
+        <div class="column is-10">
+          <h2 class="title is-3">Contribution Summary</h2>
+
+          <div class="content has-text-centered">
+            <div style="display: inline-block; max-width: 100%; width: 100%;">
+              <!-- Image -->
+              <img src="./static/images/summary.png" alt="Summary"
+              style="width: auto; height: auto; display: block; margin: 0 auto; max-height: 250px;">
+
+              <!-- Caption/Description -->
+              <p style="margin-top: 1.5rem; font-size: 1rem; line-height: 1.7; color: #333; text-align: center;">
+                Overall, our findings show that species-specific visual characteristics play a critical role in underwater object detectability beyond simple data quantity. Performance disparities arise primarily during localization, where distinguishing marine organisms from the background is the main bottleneck. In the classification stage, we uncover important precision–recall tradeoffs and inter-class dependencies that can guide application-specific training strategies. We further validate these insights through architectural ablation studies and experiments on the additional RUOD dataset, providing a strong foundation for future underwater object detection research.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    </div>
+    </div>
+  </section>
+
+
+
+
+  <!-- BibTeX Section -->
+  <section class="section" id="BibTeX">
+    <div class="container is-max-desktop content">
+      <h2 class="title has-text-centered">BibTeX</h2>
+      <pre><code>@InProceedings{Wille_2026_WACV,
+        author    = {Wille, Melanie and Fischer, Tobias and Raine, Scarlett},
+        title     = {Are All Marine Species Created Equal? Performance Disparities in Underwater Object Detection},
+        booktitle = {Proceedings of the IEEE/CVF Winter Conference on Applications of Computer Vision (WACV)},
+        month     = {March},
+        year      = {2026},
+        pages     = {4556-4565}
+    }</code></pre>
+    </div>
+  </section>
+
+
+  <!-- Acknowledgement Section -->
+  <section class="section">
+    <div class="container is-centered has-text-centered">
+      <div class="columns is-four-fifths is-centered">
+        <div class="column is-10">
+          <h2 class="title is-4">Acknowledgement</h2>
+          <div class="content has-text-centered is-size-6">
+            <p>
+              This research was supported by the QUT Centre for Robotics, 
+              QUT Digital Research Infrastructure team for HPC,
+              and an ARC DECRA Fellowship DE240100149 to TF.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer centered-footer" style="padding: 2rem 1.5rem;">
+    <div class="container">
+      <div class="columns is-centered">
+        <div class="column is-8">
+          <div class="content" style="font-size: 0.85rem;">
+            <p>
+              This website is licensed under a <a rel="license"
+                href="http://creativecommons.org/licenses/by-sa/4.0/">Creative
+                Commons Attribution-ShareAlike 4.0 International License.</a> This website template is from <a
+                href="https://github.com/nerfies/nerfies.github.io">Nerfies</a>. We thank the authors for
+              developing and open-sourcing this template.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+</body>
+
+</html>
